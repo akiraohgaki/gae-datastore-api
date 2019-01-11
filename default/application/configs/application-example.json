@@ -1,0 +1,5 @@
+{
+    "email": "username@gmail.com",
+    "access_token_expires": 365,
+    "debug": true
+}
