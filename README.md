@@ -1,7 +1,5 @@
 # gae-datastore-api
 
-[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
-
 API app for Cloud Datastore.
 
 Copyright: 2017, Akira Ohgaki
