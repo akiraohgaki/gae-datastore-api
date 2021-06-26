@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Create application config
-echo "${APPLICATION_CONFIG}" > 'default/application/configs/application.json'
+echo "${APPLICATION_CONFIG}" >'default/application/configs/application.json'
 
 # Install Google Cloud SDK
 CLOUDSDK_PACKAGE='google-cloud-sdk-185.0.0-linux-x86_64.tar.gz'
@@ -14,7 +14,7 @@ export CLOUDSDK_CORE_DISABLE_PROMPTS=1
 gcloud components install app-engine-python
 
 # Activate service account
-echo "${GOOGLE_CLIENT_SECRET}" > "${HOME}/client-secret.json"
+echo "${GOOGLE_CLIENT_SECRET}" >"${HOME}/client-secret.json"
 gcloud auth activate-service-account --key-file "${HOME}/client-secret.json"
 
 # Deploy
